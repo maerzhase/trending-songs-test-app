@@ -1,11 +1,11 @@
 import Head from 'next/head'
 // import Image from 'next/image'
 import { GetServerSideProps } from 'next'
-import { getSongsTrending } from '../api/index'
 import Song from '../components/Song'
+import useStores, { getStoreInstances } from '../stores/index'
 
-export const Home = (props): JSX.Element => {
-  console.log(props) // eslint-disable-line
+export const Home = (): JSX.Element => {
+  const { dataStore } = useStores()
   return (
     <div className="container">
       <Head>
@@ -14,7 +14,7 @@ export const Home = (props): JSX.Element => {
       </Head>
 
       <main>
-        {props.songs.map((s) => (
+        {dataStore.songs.map((s) => (
           <Song key={s.id} song={s} withArtist />
         ))}
       </main>
@@ -25,10 +25,13 @@ export const Home = (props): JSX.Element => {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const songs = await getSongsTrending()
+  const { dataStore } = getStoreInstances(null)
+  await dataStore.initialize()
   return {
     props: {
-      songs,
+      initialState: {
+        dataStore: dataStore.getSnapshot(),
+      },
     },
   }
 }
