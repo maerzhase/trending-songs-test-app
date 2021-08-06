@@ -7,7 +7,7 @@ export const Home = (props): JSX.Element => {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Loudly Trending Songs App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
