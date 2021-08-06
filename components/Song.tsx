@@ -5,6 +5,7 @@ import ISong from '../stores/models/Song'
 
 interface SongProps {
   song: ISong
+  withArtist: boolean
 }
 
 const Song = (props: SongProps): JSX.Element => {
