@@ -1,4 +1,6 @@
-# NextJS Typescript Boilerplate
+# Project Name
+
+#### Based on: NextJS Typescript Boilerplate
 
 Bootstrap a developer-friendly NextJS app configured with:
 
@@ -8,26 +10,24 @@ Bootstrap a developer-friendly NextJS app configured with:
 - Linting, typechecking and formatting on by default using [`husky`](https://github.com/typicode/husky) for commit hooks
 - Testing with [Jest](https://jestjs.io/) and [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro)
 
-## Preview
+## Getting started
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+- `npm install` to install all dependenccies
+- `npm start dev` start dev server on `http://localhost:3000`
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest)
+The repository uses `husky` to setup precommit hooks that runs the test and linters.
 
-## Deploy your own
+## Command Pallet
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+The following commands are available via `npm run` or `yarn run`:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest&project-name=with-typescript-eslint-jest&repository-name=with-typescript-eslint-jest)
+- `dev`: Run dev server on `http://localhost:3000`
+- `build`: Creat production build
+- `start`: Start production server on `http://localhost:3000`
+- `type-check`: Run typescript type checking
+- `format`: Run prettier to reformat code
+- `lint`: Run eslint
+- `test:watch`: Run jest in watch mode for writing tests
+- `test`: Run tests with jest
+- `test-all`: Runs linter, typechecker and jest tests
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-typescript-eslint-jest with-typescript-eslint-jest-app
-# or
-yarn create next-app --example with-typescript-eslint-jest with-typescript-eslint-jest-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
