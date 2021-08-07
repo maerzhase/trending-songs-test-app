@@ -1,13 +1,14 @@
 import { createTheme as createMuiTheme } from '@material-ui/core/styles'
 
 const SANS = 'IBM Plex Sans'
-const PRIMARY_MAIN = '#cc3ff3'
+const PRIMARY_MAIN = '#05386B'
+const SECONDARY_MAIN = '#5CDB95'
 
 // const muiTheme = createMuiTheme();
 
 // const fontWeightLight = 300;
 const fontWeightRegular = 400
-// const fontWeightMedium = 500;
+const fontWeightMedium = 500;
 // const fontWeightBold = 700;
 
 const theme = createMuiTheme({
@@ -15,12 +16,18 @@ const theme = createMuiTheme({
     primary: {
       main: PRIMARY_MAIN,
     },
+    secondary: {
+      main: SECONDARY_MAIN,
+    },
   },
   typography: {
     fontFamily: [SANS, 'sans-serif'].join(', '),
     fontSize: 14,
     htmlFontSize: 14,
     fontWeightRegular: fontWeightRegular,
+    subtitle1: {
+      fontWeight: fontWeightMedium,
+    }
   },
 })
 
