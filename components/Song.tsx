@@ -8,20 +8,39 @@ import Typography from '@material-ui/core/Typography'
 // import FavoriteIcon from '@material-ui/icons/Favorite';
 import AudioPlayer from './AudioPlayer/index'
 import ISong from '../stores/models/Song'
+import FavoriteIcon from '@material-ui/icons/Favorite'
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
+
 interface SongProps {
   song: ISong
   onPlay(song: ISong): void
   onPause(): void
+  onLike(): void
+  onUnlike(): void
   activeSongId: string
 }
 
 const Song = (props: SongProps): JSX.Element => {
-  const { song, activeSongId, onPlay, onPause } = props
+  const { song, activeSongId, onPlay, onPause, onLike, onUnlike } = props
   const hasValidAudio = !!song.music_file_path && !!song.music_file_mimetype
+
+  // TODO: This boolean is just a workaround to toggle like/unlike behaviour
+  // in handleClickLikeButton, because there is no infromation if the song
+  // was already liked by the current user
+  const [isLiked, setIsLiked] = React.useState(false)
 
   const isActive = song.id === activeSongId
   const elevation = isActive ? 8 : 1
+
+  const handleClickLikeButton = () => {
+    if (!isLiked) {
+      onLike(song)
+      setIsLiked(true)
+    } else {
+      onUnlike(song)
+      setIsLiked(false)
+    }
+  }
 
   return (
     <Box m={2}>
@@ -39,9 +58,9 @@ const Song = (props: SongProps): JSX.Element => {
               <Typography variant="subtitle1">{song.name}</Typography>
               <Typography variant="body2">{song.artist_name}</Typography>
             </Box>
-            <IconButton color="primary">
+            <IconButton color="primary" onClick={handleClickLikeButton}>
               <Badge color="secondary" badgeContent={song.likes}>
-                <FavoriteBorderIcon />
+                {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
               </Badge>
             </IconButton>
           </Box>

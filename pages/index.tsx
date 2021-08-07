@@ -17,6 +17,14 @@ export const Home = (): JSX.Element => {
     uiStore.setActiveSongId(null)
   }
 
+  const handleLikeSong = (song) => {
+    dataStore.likeSong(song)
+  }
+
+  const handleUnlikeSong = (song) => {
+    dataStore.unlikeSong(song)
+  }
+
   return (
     <div className="container">
       <Head>
@@ -33,6 +41,8 @@ export const Home = (): JSX.Element => {
               onPlay={handlePlaySong}
               onPause={handlePauseSong}
               activeSongId={uiStore.activeSongId}
+              onLike={handleLikeSong}
+              onUnlike={handleUnlikeSong}
             />
           ))}
         </Box>

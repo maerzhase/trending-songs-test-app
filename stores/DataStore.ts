@@ -1,11 +1,13 @@
 import { makeObservable, observable, action, toJS } from 'mobx'
-import { getSongsTrending } from '../api/index'
+import { getSongsTrending, postSongLike, postSongUnlike } from '../api/index'
 import Song from './models/Song'
 
 export interface IDataStore {
   songs: Song[]
   initialize(): Promise<Song[]>
   receiveSongs(songs: Song[]): void
+  likeSong(): Promise<boolean>
+  unlikeSong(): Promise<boolean>
   getSnapshot(): IDataStoreSnapshot
   hydrate(snapshot: IDataStoreSnapshot): void
 }
@@ -20,6 +22,8 @@ class DataStore implements IDataStore {
       songs: observable,
       initialize: action,
       receiveSongs: action,
+      likeSong: action,
+      unlikeSong: action,
     })
   }
 
@@ -37,6 +41,26 @@ class DataStore implements IDataStore {
 
   public receiveSongs = (songs: Song[]): void => {
     this.songs = songs
+  }
+
+  public likeSong = async (song: Song): void => {
+    try {
+      await postSongLike(song)
+      await this.initialize()
+      return true
+    } catch (e) {
+      console.warn(e)
+    }
+  }
+
+  public unlikeSong = async (song: Song): void => {
+    try {
+      await postSongUnlike(song)
+      await this.initialize()
+      return true
+    } catch (e) {
+      console.warn(e)
+    }
   }
 
   public getSnapshot = (): IDataStoreSnapshot => {
