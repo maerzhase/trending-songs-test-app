@@ -28,18 +28,23 @@ const Song = (props: SongProps): JSX.Element => {
   // in handleClickLikeButton, because there is no infromation if the song
   // was already liked by the current user
   const [isLiked, setIsLiked] = React.useState(false)
+  const [isWaiting, setIsWaiting] = React.useState(false)
 
   const isActive = song.id === activeSongId
   const elevation = isActive ? 8 : 1
 
   const handleClickLikeButton = () => {
+    if (isWaiting) return
+    setIsWaiting(true)
     if (!isLiked) {
       onLike(song).then(() => {
         setIsLiked(true)
+        setIsWaiting(false)
       })
     } else {
       onUnlike(song).then(() => {
         setIsLiked(false)
+        setIsWaiting(false)
       })
     }
   }
