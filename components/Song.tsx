@@ -34,11 +34,13 @@ const Song = (props: SongProps): JSX.Element => {
 
   const handleClickLikeButton = () => {
     if (!isLiked) {
-      onLike(song)
-      setIsLiked(true)
+      onLike(song).then(() => {
+        setIsLiked(true)
+      })
     } else {
-      onUnlike(song)
-      setIsLiked(false)
+      onUnlike(song).then(() => {
+        setIsLiked(false)
+      })
     }
   }
 

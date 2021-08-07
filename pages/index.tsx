@@ -18,11 +18,11 @@ export const Home = (): JSX.Element => {
   }
 
   const handleLikeSong = (song) => {
-    dataStore.likeSong(song)
+    return dataStore.likeSong(song)
   }
 
   const handleUnlikeSong = (song) => {
-    dataStore.unlikeSong(song)
+    return dataStore.unlikeSong(song)
   }
 
   return (
