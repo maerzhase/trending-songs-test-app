@@ -9,14 +9,14 @@ interface IAudioPlayerProps {
   duration: number
   onPlay(): void
   onPause(): void
-  isPlaying: bool
+  isPlaying: boolean
 }
 
 const AudioPlayer = (props: IAudioPlayerProps): JSX.Element => {
   const { src, duration, onPlay, onPause, isPlaying } = props
   const [progress, setProgress] = useState(0)
 
-  const audioRef: HTMLMediaElement = useRef(null)
+  const audioRef = useRef(null)
   const intervalRef = useRef(null)
 
   const startProgressTimer = () => {
@@ -28,7 +28,7 @@ const AudioPlayer = (props: IAudioPlayerProps): JSX.Element => {
       } else {
         setProgress(audioRef.current.currentTime)
       }
-    }, [1000])
+    }, 1000)
   }
 
   const onScrub = (value) => {

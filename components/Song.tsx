@@ -13,11 +13,11 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
 
 interface SongProps {
   song: ISong
-  onPlay(song: ISong): void
-  onPause(): void
-  onLike(): void
-  onUnlike(): void
-  activeSongId: string
+  onPlay?(song: ISong): void
+  onPause?(song: ISong): void
+  onLike?(song: ISong): Promise<any>
+  onUnlike?(song: ISong): Promise<any>
+  activeSongId?: string
 }
 
 const Song = (props: SongProps): JSX.Element => {

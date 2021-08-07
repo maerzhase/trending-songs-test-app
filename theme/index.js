@@ -23,7 +23,6 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: [SANS, 'sans-serif'].join(', '),
     fontSize: 14,
-    htmlFontSize: 14,
     fontWeightRegular: fontWeightRegular,
     subtitle1: {
       fontWeight: fontWeightMedium,

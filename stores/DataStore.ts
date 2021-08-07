@@ -6,8 +6,8 @@ export interface IDataStore {
   songs: Song[]
   initialize(): Promise<Song[]>
   receiveSongs(songs: Song[]): void
-  likeSong(): Promise<boolean>
-  unlikeSong(): Promise<boolean>
+  likeSong(song: Song): Promise<boolean>
+  unlikeSong(song: Song): Promise<boolean>
   getSnapshot(): IDataStoreSnapshot
   hydrate(snapshot: IDataStoreSnapshot): void
 }
@@ -43,7 +43,7 @@ class DataStore implements IDataStore {
     this.songs = songs
   }
 
-  public likeSong = async (song: Song): void => {
+  public likeSong = async (song: Song): Promise<boolean> => {
     try {
       await postSongLike(song)
       await this.initialize()
@@ -53,7 +53,7 @@ class DataStore implements IDataStore {
     }
   }
 
-  public unlikeSong = async (song: Song): void => {
+  public unlikeSong = async (song: Song): Promise<boolean> => {
     try {
       await postSongUnlike(song)
       await this.initialize()

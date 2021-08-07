@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles'
 const useStyles = makeStyles((theme) => ({
   '@global': {
     html: {
-      fontSize: `${theme.typography.htmlFontSize}px`,
+      fontSize: `${theme.typography.fontSize}px`,
     },
   },
 }))
