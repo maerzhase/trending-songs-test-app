@@ -11,11 +11,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-interface CssBaslineProps {
+interface CssBaselineProps {
   children: JSX.Element
 }
 
-const CssBaseline = ({ children }: CssBaslineProps): JSX.Element => {
+const CssBaseline = ({ children }: CssBaselineProps): JSX.Element => {
   useStyles()
   return (
     <React.Fragment>
