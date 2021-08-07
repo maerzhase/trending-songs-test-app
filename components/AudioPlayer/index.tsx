@@ -74,12 +74,17 @@ const AudioPlayer = (props: IAudioPlayerProps): JSX.Element => {
   }, [])
 
   return (
-    <div>
+    <React.Fragment>
       <audio ref={audioRef}>
         <source src={src} />
         Your browser does not support the audio element.
       </audio>
-      <Box display="flex" alignItems="center" flexDirection="column">
+      <Box
+        display="flex"
+        alignItems="center"
+        flexDirection="column"
+        width="100%"
+      >
         <IconButton onClick={handleToggleIsPlaying}>
           {isPlaying ? <PauseIcon /> : <PlayArrowIcon />}
         </IconButton>
@@ -95,7 +100,7 @@ const AudioPlayer = (props: IAudioPlayerProps): JSX.Element => {
           onKeyUp={onScrubEnd}
         />
       </Box>
-    </div>
+    </React.Fragment>
   )
 }
 
