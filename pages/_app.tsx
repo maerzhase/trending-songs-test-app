@@ -7,7 +7,7 @@ import { useStoresForProviders } from '../stores/index'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
-  const { dataStore } = useStoresForProviders(pageProps.initialState)
+  const { dataStore, uiStore } = useStoresForProviders(pageProps.initialState)
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.
@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 
   return (
     <MuiThemeProvider theme={theme}>
-      <Provider dataStore={dataStore}>
+      <Provider dataStore={dataStore} uiStore={uiStore}>
         <>
           <CssBaseline />
           <Component {...pageProps} />
