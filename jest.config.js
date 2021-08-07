@@ -16,5 +16,5 @@ module.exports = {
     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
     '^next/image$': '<rootDir>/test/__mocks__/nextImage.js',
   },
-  setupFiles: ["./jest.setup.js"],
+  setupFiles: ['./jest.setup.js'],
 }
