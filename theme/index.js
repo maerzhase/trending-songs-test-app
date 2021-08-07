@@ -8,7 +8,7 @@ const SECONDARY_MAIN = '#5CDB95'
 
 // const fontWeightLight = 300;
 const fontWeightRegular = 400
-const fontWeightMedium = 500;
+const fontWeightMedium = 500
 // const fontWeightBold = 700;
 
 const theme = createMuiTheme({
@@ -27,7 +27,7 @@ const theme = createMuiTheme({
     fontWeightRegular: fontWeightRegular,
     subtitle1: {
       fontWeight: fontWeightMedium,
-    }
+    },
   },
 })
 
