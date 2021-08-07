@@ -11,16 +11,18 @@ interface SongProps {
 
 const Song = (props: SongProps): JSX.Element => {
   const { withArtist, song } = props
+  const hasValidAudio = !!song.music_file_path && !!song.music_file_mimetype
   return (
     <div>
       <h1>{song.name}</h1>
-      {song.music_file_mimetype}
       <Image src={song.cover_image_path} width={200} height={200} />
       {withArtist && <Artist artist={song.artist} />}
-      <audio controls>
-        <source src={song.music_file_path} />
-        Your browser does not support the audio element.
-      </audio>
+      {hasValidAudio && (
+        <audio controls>
+          <source src={song.music_file_path} />
+          Your browser does not support the audio element.
+        </audio>
+      )}
     </div>
   )
 }
