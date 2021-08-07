@@ -30,4 +30,3 @@ The following commands are available via `npm run` or `yarn run`:
 - `test:watch`: Run jest in watch mode for writing tests
 - `test`: Run tests with jest
 - `test-all`: Runs linter, typechecker and jest tests
-
