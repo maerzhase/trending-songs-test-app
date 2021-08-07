@@ -20,14 +20,49 @@ exports[`Home page matches snapshot 1`] = `
             lf
           </h2>
         </div>
-        <audio
-          controls=""
-        >
-          <source
-            src="https://dz2l6nhikl0ua.cloudfront.net/assets/music_file/44f443f3-cd1c-11eb-8a0d-022ed69f96e6.m4a?cb=20210614162446"
-          />
-          Your browser does not support the audio element.
-        </audio>
+        <div>
+          <audio>
+            <source
+              src="https://dz2l6nhikl0ua.cloudfront.net/assets/music_file/44f443f3-cd1c-11eb-8a0d-022ed69f96e6.m4a?cb=20210614162446"
+            />
+            Your browser does not support the audio element.
+          </audio>
+          <div
+            class="MuiBox-root MuiBox-root-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 5v14l11-7z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <input
+              class="progress"
+              max="55"
+              min="0"
+              step="1"
+              type="range"
+              value="0"
+            />
+          </div>
+        </div>
       </div>
       <div>
         <h1>
@@ -73,14 +108,49 @@ exports[`Home page matches snapshot 1`] = `
             aarelxuxmn
           </h2>
         </div>
-        <audio
-          controls=""
-        >
-          <source
-            src="https://dz2l6nhikl0ua.cloudfront.net/assets/music_file/3f28ee9e-71f0-11eb-8a0d-022ed69f96e6.m4a?cb=20210218145023"
-          />
-          Your browser does not support the audio element.
-        </audio>
+        <div>
+          <audio>
+            <source
+              src="https://dz2l6nhikl0ua.cloudfront.net/assets/music_file/3f28ee9e-71f0-11eb-8a0d-022ed69f96e6.m4a?cb=20210218145023"
+            />
+            Your browser does not support the audio element.
+          </audio>
+          <div
+            class="MuiBox-root MuiBox-root-2"
+          >
+            <button
+              class="MuiButtonBase-root MuiIconButton-root"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 5v14l11-7z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <input
+              class="progress"
+              max="33"
+              min="0"
+              step="1"
+              type="range"
+              value="0"
+            />
+          </div>
+        </div>
       </div>
       <div>
         <h1>
