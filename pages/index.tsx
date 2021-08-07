@@ -1,11 +1,22 @@
 import Head from 'next/head'
 // import Image from 'next/image'
+import { observer } from 'mobx-react'
 import { GetServerSideProps } from 'next'
+import Box from '@material-ui/core/Box'
 import Song from '../components/Song'
 import useStores, { getStoreInstances } from '../stores/index'
 
 export const Home = (): JSX.Element => {
-  const { dataStore } = useStores()
+  const { dataStore, uiStore } = useStores()
+
+  const handlePlaySong = (song) => {
+    uiStore.setActiveSongId(song.id)
+  }
+
+  const handlePauseSong = () => {
+    uiStore.setActiveSongId(null)
+  }
+
   return (
     <div className="container">
       <Head>
@@ -14,9 +25,17 @@ export const Home = (): JSX.Element => {
       </Head>
 
       <main>
-        {dataStore.songs.map((s) => (
-          <Song key={s.id} song={s} withArtist />
-        ))}
+        <Box display="flex" flexWrap="wrap">
+          {dataStore.songs.map((s) => (
+            <Song
+              key={s.id}
+              song={s}
+              onPlay={handlePlaySong}
+              onPause={handlePauseSong}
+              activeSongId={uiStore.activeSongId}
+            />
+          ))}
+        </Box>
       </main>
 
       <footer></footer>
@@ -36,4 +55,4 @@ export const getServerSideProps: GetServerSideProps = async () => {
   }
 }
 
-export default Home
+export default observer(Home)

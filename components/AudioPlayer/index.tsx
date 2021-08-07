@@ -7,12 +7,14 @@ import PauseIcon from '@material-ui/icons/Pause'
 interface IAudioPlayerProps {
   src: string
   duration: number
+  onPlay(): void
+  onPause(): void
+  isPlaying: bool
 }
 
 const AudioPlayer = (props: IAudioPlayerProps): JSX.Element => {
-  const { src, duration } = props
+  const { src, duration, onPlay, onPause, isPlaying } = props
   const [progress, setProgress] = useState(0)
-  const [isPlaying, setIsPlaying] = useState(false)
 
   const audioRef: HTMLMediaElement = useRef(null)
   const intervalRef = useRef(null)
@@ -22,7 +24,7 @@ const AudioPlayer = (props: IAudioPlayerProps): JSX.Element => {
 
     intervalRef.current = setInterval(() => {
       if (audioRef.current.ended) {
-        setIsPlaying(false)
+        onPause()
       } else {
         setProgress(audioRef.current.currentTime)
       }
@@ -37,13 +39,17 @@ const AudioPlayer = (props: IAudioPlayerProps): JSX.Element => {
 
   const onScrubEnd = () => {
     if (!isPlaying) {
-      setIsPlaying(true)
+      onPlay()
     }
     startProgressTimer()
   }
 
   const handleToggleIsPlaying = () => {
-    setIsPlaying(!isPlaying)
+    if (isPlaying) {
+      onPause()
+    } else {
+      onPlay()
+    }
   }
 
   useEffect(() => {
@@ -73,7 +79,7 @@ const AudioPlayer = (props: IAudioPlayerProps): JSX.Element => {
         <source src={src} />
         Your browser does not support the audio element.
       </audio>
-      <Box display="flex" alignItems="center">
+      <Box display="flex" alignItems="center" flexDirection="column">
         <IconButton onClick={handleToggleIsPlaying}>
           {isPlaying ? <PauseIcon /> : <PlayArrowIcon />}
         </IconButton>
