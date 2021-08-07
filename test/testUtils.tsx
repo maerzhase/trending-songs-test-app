@@ -8,8 +8,12 @@ import { Provider } from 'mobx-react'
 const Providers =
   (initialState) =>
   ({ children }) => {
-    const { dataStore } = useStoresForProviders(initialState)
-    return <Provider dataStore={dataStore}>{children}</Provider>
+    const { dataStore, uiStore } = useStoresForProviders(initialState)
+    return (
+      <Provider dataStore={dataStore} uiStore={uiStore}>
+        {children}
+      </Provider>
+    )
   }
 
 const customRender = (ui, { initialState = null, ...options }) => {
