@@ -10,6 +10,7 @@ import AudioPlayer from './AudioPlayer/index'
 import ISong from '../stores/models/Song'
 import FavoriteIcon from '@material-ui/icons/Favorite'
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
+import Chip from '@material-ui/core/Chip'
 
 interface SongProps {
   song: ISong
@@ -80,6 +81,13 @@ const Song = (props: SongProps): JSX.Element => {
               isPlaying={isActive}
             />
           )}
+          <Box mt={2} display="flex" flexWrap="wrap" maxWidth={200}>
+            {song.song_genres.map(({ name }) => (
+              <Box key={name} mr={0.5} mb={0.5}>
+                <Chip size="small" color="secondary" label={name} />
+              </Box>
+            ))}
+          </Box>
         </Box>
       </Paper>
     </Box>
