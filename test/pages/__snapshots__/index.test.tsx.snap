@@ -23,33 +23,33 @@ exports[`Home page matches snapshot 1`] = `
                 src="https://dz2l6nhikl0ua.cloudfront.net/assets/cover_image/4801376e-cd1c-11eb-8a0d-022ed69f96e6.jpeg?cb=20210614162451"
                 width="200"
               />
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
+              <div
+                class="MuiBox-root MuiBox-root-4"
               >
-                2 Step 1
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                LF
-              </p>
-              <div>
-                <audio>
-                  <source
-                    src="https://dz2l6nhikl0ua.cloudfront.net/assets/music_file/44f443f3-cd1c-11eb-8a0d-022ed69f96e6.m4a?cb=20210614162446"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
                 <div
-                  class="MuiBox-root MuiBox-root-4"
+                  class="MuiBox-root MuiBox-root-5"
                 >
-                  <button
-                    class="MuiButtonBase-root MuiIconButton-root"
-                    tabindex="0"
-                    type="button"
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle1"
+                  >
+                    2 Step 1
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    LF
+                  </p>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
                   >
                     <span
-                      class="MuiIconButton-label"
+                      class="MuiBadge-root"
                     >
                       <svg
                         aria-hidden="true"
@@ -58,51 +58,62 @@ exports[`Home page matches snapshot 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M8 5v14l11-7z"
+                          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
                         />
                       </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary"
+                      >
+                        1
+                      </span>
                     </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                  <input
-                    class="progress"
-                    max="55"
-                    min="0"
-                    step="1"
-                    type="range"
-                    value="0"
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
                   />
-                </div>
+                </button>
               </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="MuiBox-root MuiBox-root-5"
-        >
-          <div
-            class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-          >
-            <div
-              class="MuiBox-root MuiBox-root-6"
-            >
-              <img
-                height="200"
-                src="https://api-stg.jam-community.com/img/song_default_image.png"
-                width="200"
-              />
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
+              <audio>
+                <source
+                  src="https://dz2l6nhikl0ua.cloudfront.net/assets/music_file/44f443f3-cd1c-11eb-8a0d-022ed69f96e6.m4a?cb=20210614162446"
+                />
+                Your browser does not support the audio element.
+              </audio>
+              <div
+                class="MuiBox-root MuiBox-root-6"
               >
-                Lose Control
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                *                      MrNobody ®
-              </p>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8 5v14l11-7z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <input
+                  class="progress"
+                  max="55"
+                  min="0"
+                  step="1"
+                  type="range"
+                  value="0"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -120,60 +131,33 @@ exports[`Home page matches snapshot 1`] = `
                 src="https://api-stg.jam-community.com/img/song_default_image.png"
                 width="200"
               />
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
+              <div
+                class="MuiBox-root MuiBox-root-9"
               >
-                Disconnected World
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                MRNOBODY®
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="MuiBox-root MuiBox-root-9"
-        >
-          <div
-            class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-          >
-            <div
-              class="MuiBox-root MuiBox-root-10"
-            >
-              <img
-                height="200"
-                src="https://dz2l6nhikl0ua.cloudfront.net/assets/cover_image/3f41907e-71f0-11eb-8a0d-022ed69f96e6.jpeg?cb=20210218145023"
-                width="200"
-              />
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
-              >
-                mix
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                aarelxuxmn
-              </p>
-              <div>
-                <audio>
-                  <source
-                    src="https://dz2l6nhikl0ua.cloudfront.net/assets/music_file/3f28ee9e-71f0-11eb-8a0d-022ed69f96e6.m4a?cb=20210218145023"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
                 <div
-                  class="MuiBox-root MuiBox-root-11"
+                  class="MuiBox-root MuiBox-root-10"
                 >
-                  <button
-                    class="MuiButtonBase-root MuiIconButton-root"
-                    tabindex="0"
-                    type="button"
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle1"
+                  >
+                    Lose Control
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    *                      MrNobody ®
+                  </p>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
                   >
                     <span
-                      class="MuiIconButton-label"
+                      class="MuiBadge-root"
                     >
                       <svg
                         aria-hidden="true"
@@ -182,186 +166,598 @@ exports[`Home page matches snapshot 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M8 5v14l11-7z"
+                          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
                         />
                       </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary"
+                      >
+                        1
+                      </span>
                     </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                  <input
-                    class="progress"
-                    max="33"
-                    min="0"
-                    step="1"
-                    type="range"
-                    value="0"
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
                   />
-                </div>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="MuiBox-root MuiBox-root-12"
+          class="MuiBox-root MuiBox-root-11"
         >
           <div
             class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
-              class="MuiBox-root MuiBox-root-13"
+              class="MuiBox-root MuiBox-root-12"
             >
               <img
                 height="200"
                 src="https://api-stg.jam-community.com/img/song_default_image.png"
                 width="200"
               />
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
+              <div
+                class="MuiBox-root MuiBox-root-13"
               >
-                Luv Me
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                MRNOBODY®
-              </p>
+                <div
+                  class="MuiBox-root MuiBox-root-14"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle1"
+                  >
+                    World Anthems
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    *                            MrNobody ®
+                  </p>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <span
+                      class="MuiBadge-root"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                        />
+                      </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary"
+                      >
+                        4
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="MuiBox-root MuiBox-root-14"
+          class="MuiBox-root MuiBox-root-15"
         >
           <div
             class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
-              class="MuiBox-root MuiBox-root-15"
+              class="MuiBox-root MuiBox-root-16"
             >
               <img
                 height="200"
                 src="https://api-stg.jam-community.com/img/song_default_image.png"
                 width="200"
               />
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
+              <div
+                class="MuiBox-root MuiBox-root-17"
               >
-                Time Traveller
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                MRNOBODY®
-              </p>
+                <div
+                  class="MuiBox-root MuiBox-root-18"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle1"
+                  >
+                    Disconnected World
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    MRNOBODY®
+                  </p>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <span
+                      class="MuiBadge-root"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                        />
+                      </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary"
+                      >
+                        4
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="MuiBox-root MuiBox-root-16"
+          class="MuiBox-root MuiBox-root-19"
         >
           <div
             class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
-              class="MuiBox-root MuiBox-root-17"
+              class="MuiBox-root MuiBox-root-20"
             >
               <img
                 height="200"
                 src="https://api-stg.jam-community.com/img/song_default_image.png"
                 width="200"
               />
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
+              <div
+                class="MuiBox-root MuiBox-root-21"
               >
-                Lean On Me
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                MRNOBODY®
-              </p>
+                <div
+                  class="MuiBox-root MuiBox-root-22"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle1"
+                  >
+                    Wonderland
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    MRNOBODY®
+                  </p>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <span
+                      class="MuiBadge-root"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                        />
+                      </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary"
+                      >
+                        6
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="MuiBox-root MuiBox-root-18"
+          class="MuiBox-root MuiBox-root-23"
         >
           <div
             class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
-              class="MuiBox-root MuiBox-root-19"
+              class="MuiBox-root MuiBox-root-24"
             >
               <img
                 height="200"
                 src="https://api-stg.jam-community.com/img/song_default_image.png"
                 width="200"
               />
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
+              <div
+                class="MuiBox-root MuiBox-root-25"
               >
-                Wonderland
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                MRNOBODY®
-              </p>
+                <div
+                  class="MuiBox-root MuiBox-root-26"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle1"
+                  >
+                    Luv Me
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    MRNOBODY®
+                  </p>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <span
+                      class="MuiBadge-root"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                        />
+                      </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary"
+                      >
+                        2
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="MuiBox-root MuiBox-root-20"
+          class="MuiBox-root MuiBox-root-27"
         >
           <div
             class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
-              class="MuiBox-root MuiBox-root-21"
+              class="MuiBox-root MuiBox-root-28"
             >
               <img
                 height="200"
                 src="https://api-stg.jam-community.com/img/song_default_image.png"
                 width="200"
               />
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
+              <div
+                class="MuiBox-root MuiBox-root-29"
               >
-                World Anthems
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                *                            MrNobody ®
-              </p>
+                <div
+                  class="MuiBox-root MuiBox-root-30"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle1"
+                  >
+                    Lean On Me
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    MRNOBODY®
+                  </p>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <span
+                      class="MuiBadge-root"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                        />
+                      </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary"
+                      >
+                        9
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="MuiBox-root MuiBox-root-22"
+          class="MuiBox-root MuiBox-root-31"
         >
           <div
             class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
-              class="MuiBox-root MuiBox-root-23"
+              class="MuiBox-root MuiBox-root-32"
             >
               <img
                 height="200"
                 src="https://api-stg.jam-community.com/img/song_default_image.png"
                 width="200"
               />
-              <h6
-                class="MuiTypography-root MuiTypography-h6"
+              <div
+                class="MuiBox-root MuiBox-root-33"
               >
-                Close Tonight
-              </h6>
-              <p
-                class="MuiTypography-root MuiTypography-body1"
+                <div
+                  class="MuiBox-root MuiBox-root-34"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle1"
+                  >
+                    Time Traveller
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    MRNOBODY®
+                  </p>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <span
+                      class="MuiBadge-root"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                        />
+                      </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary"
+                      >
+                        6
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-35"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-36"
+            >
+              <img
+                height="200"
+                src="https://dz2l6nhikl0ua.cloudfront.net/assets/cover_image/3f41907e-71f0-11eb-8a0d-022ed69f96e6.jpeg?cb=20210218145023"
+                width="200"
+              />
+              <div
+                class="MuiBox-root MuiBox-root-37"
               >
-                MRNOBODY®
-              </p>
+                <div
+                  class="MuiBox-root MuiBox-root-38"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle1"
+                  >
+                    mix
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    aarelxuxmn
+                  </p>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <span
+                      class="MuiBadge-root"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                        />
+                      </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary MuiBadge-invisible"
+                      >
+                        0
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <audio>
+                <source
+                  src="https://dz2l6nhikl0ua.cloudfront.net/assets/music_file/3f28ee9e-71f0-11eb-8a0d-022ed69f96e6.m4a?cb=20210218145023"
+                />
+                Your browser does not support the audio element.
+              </audio>
+              <div
+                class="MuiBox-root MuiBox-root-39"
+              >
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8 5v14l11-7z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <input
+                  class="progress"
+                  max="33"
+                  min="0"
+                  step="1"
+                  type="range"
+                  value="0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-40"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-41"
+            >
+              <img
+                height="200"
+                src="https://api-stg.jam-community.com/img/song_default_image.png"
+                width="200"
+              />
+              <div
+                class="MuiBox-root MuiBox-root-42"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-43"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle1"
+                  >
+                    Close Tonight
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    MRNOBODY®
+                  </p>
+                </div>
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <span
+                      class="MuiBadge-root"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                        />
+                      </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary"
+                      >
+                        6
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
