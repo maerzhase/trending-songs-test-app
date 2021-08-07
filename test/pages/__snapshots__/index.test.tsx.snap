@@ -10,16 +10,34 @@ exports[`Home page matches snapshot 1`] = `
         <h1>
           2 Step 1
         </h1>
+        <img
+          height="200"
+          src="https://dz2l6nhikl0ua.cloudfront.net/assets/cover_image/4801376e-cd1c-11eb-8a0d-022ed69f96e6.jpeg?cb=20210614162451"
+          width="200"
+        />
         <div>
           <h2>
             lf
           </h2>
         </div>
+        <audio
+          controls=""
+        >
+          <source
+            src="https://dz2l6nhikl0ua.cloudfront.net/assets/music_file/44f443f3-cd1c-11eb-8a0d-022ed69f96e6.m4a?cb=20210614162446"
+          />
+          Your browser does not support the audio element.
+        </audio>
       </div>
       <div>
         <h1>
           Lose Control
         </h1>
+        <img
+          height="200"
+          src="https://api-stg.jam-community.com/img/song_default_image.png"
+          width="200"
+        />
         <div>
           <h2>
             test_11_05_2021
@@ -30,6 +48,11 @@ exports[`Home page matches snapshot 1`] = `
         <h1>
           Disconnected World
         </h1>
+        <img
+          height="200"
+          src="https://api-stg.jam-community.com/img/song_default_image.png"
+          width="200"
+        />
         <div>
           <h2>
             test_11_05_2021
@@ -40,16 +63,34 @@ exports[`Home page matches snapshot 1`] = `
         <h1>
           mix
         </h1>
+        <img
+          height="200"
+          src="https://dz2l6nhikl0ua.cloudfront.net/assets/cover_image/3f41907e-71f0-11eb-8a0d-022ed69f96e6.jpeg?cb=20210218145023"
+          width="200"
+        />
         <div>
           <h2>
             aarelxuxmn
           </h2>
         </div>
+        <audio
+          controls=""
+        >
+          <source
+            src="https://dz2l6nhikl0ua.cloudfront.net/assets/music_file/3f28ee9e-71f0-11eb-8a0d-022ed69f96e6.m4a?cb=20210218145023"
+          />
+          Your browser does not support the audio element.
+        </audio>
       </div>
       <div>
         <h1>
           Luv Me
         </h1>
+        <img
+          height="200"
+          src="https://api-stg.jam-community.com/img/song_default_image.png"
+          width="200"
+        />
         <div>
           <h2>
             test_11_05_2021
@@ -60,6 +101,11 @@ exports[`Home page matches snapshot 1`] = `
         <h1>
           Time Traveller
         </h1>
+        <img
+          height="200"
+          src="https://api-stg.jam-community.com/img/song_default_image.png"
+          width="200"
+        />
         <div>
           <h2>
             test_11_05_2021
@@ -70,6 +116,11 @@ exports[`Home page matches snapshot 1`] = `
         <h1>
           Lean On Me
         </h1>
+        <img
+          height="200"
+          src="https://api-stg.jam-community.com/img/song_default_image.png"
+          width="200"
+        />
         <div>
           <h2>
             test_11_05_2021
@@ -80,6 +131,11 @@ exports[`Home page matches snapshot 1`] = `
         <h1>
           Wonderland
         </h1>
+        <img
+          height="200"
+          src="https://api-stg.jam-community.com/img/song_default_image.png"
+          width="200"
+        />
         <div>
           <h2>
             test_11_05_2021
@@ -90,6 +146,11 @@ exports[`Home page matches snapshot 1`] = `
         <h1>
           World Anthems
         </h1>
+        <img
+          height="200"
+          src="https://api-stg.jam-community.com/img/song_default_image.png"
+          width="200"
+        />
         <div>
           <h2>
             test_11_05_2021
@@ -100,6 +161,11 @@ exports[`Home page matches snapshot 1`] = `
         <h1>
           Close Tonight
         </h1>
+        <img
+          height="200"
+          src="https://api-stg.jam-community.com/img/song_default_image.png"
+          width="200"
+        />
         <div>
           <h2>
             test_11_05_2021
