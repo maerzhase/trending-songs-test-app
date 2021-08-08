@@ -1,4 +1,4 @@
-# Project Name
+# Trending Songs Test App
 
 #### Based on: NextJS Typescript Boilerplate
 
