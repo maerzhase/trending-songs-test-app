@@ -17,7 +17,7 @@ Bootstrap a developer-friendly NextJS app configured with:
 
 The repository uses `husky` to setup precommit hooks that runs the test and linters.
 
-## Command Pallet
+## Command Palette
 
 The following commands are available via `npm run` or `yarn run`:
 
