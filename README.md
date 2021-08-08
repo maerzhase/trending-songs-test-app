@@ -2,8 +2,6 @@
 
 #### Based on: NextJS Typescript Boilerplate
 
-Bootstrap a developer-friendly NextJS app configured with:
-
 - [Typescript](https://www.typescriptlang.org/)
 - Linting with [ESLint](https://eslint.org/)
 - Formatting with [Prettier](https://prettier.io/)
@@ -14,8 +12,6 @@ Bootstrap a developer-friendly NextJS app configured with:
 
 - `npm install` to install all dependenccies
 - `npm start dev` start dev server on `http://localhost:3000`
-
-The repository uses `husky` to setup precommit hooks that runs the test and linters.
 
 ## Command Palette
 
